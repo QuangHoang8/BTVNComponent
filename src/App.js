@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./style.css";
+import "./App.css";
+import HeaderShopCart, { Product } from "./shopCart";
+import { Checkout } from "./shopCart";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <HeaderShopCart />
+      <Product price1="$5.99" price2="$9.99" />
+      <Checkout />
     </div>
   );
 }
